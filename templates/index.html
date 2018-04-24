@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </head>
+</head>
   <body>
 
     <div class="jumbotron">
         <div class="container">
                 <h2>Mission to Mars</h2>
-                <h4>Get a summary of Mars data from all of these sites:</h4>
+                <h4>Get a summary of data from the red planet from all of these sites:</h4>
                 
                     <ul>
                         <li><a href="https://mars.nasa.gov/news/">NASA Mars News Site</a></li>
@@ -34,101 +34,92 @@
     <!-- Creates the Overall Grid -->
     <div class="container">
   
-    <div class="row">
-        <div class="col-sm-12 col-md-12">
-            <h4>Latest Mars News</h4>
-            <h5>{{mars.news_title}}</h5>
-            <p>{{mars.news_p}}</p>
-        </div>
-    </div>
-
-    <div class="row">
+        <div class="row">
             <div class="col-sm-12 col-md-12">
-                <h4>Current Weather on Mars</h4>
-                <p>{{mars.mars_weather}}</p>
+                <h4>Latest Mars News</h4>
+                <h5>{{mars.news_title}}</h5>
+                <p>{{mars.news_p}}</p>
             </div>
-    </div>
+        </div>
+
+        <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <h4>Current Weather on Mars</h4>
+                    <p>{{mars.mars_weather}}</p>
+                </div>
+        </div>
     
-    <div class="row"> 
-        <div class="col-sm-12 col-md-8">
-                <h4>Featured Mars Image</h4>
-                <p><img src="{{mars.featured_image_url}}" class="img-responsive"></p>
-        </div>
+        <div class="row"> 
+            <div class="col-sm-12 col-md-8">
+                    <h4>Featured Mars Image</h4>
+                    <p><img src="{{mars.featured_image_url}}" class="img-rounded"></p>
+            </div>
 
-        <div class="col-sm-12 col-md-4">
-                <h4>Mars Facts</h4>
-                <p>{{mars.facts|safe}}</p>
-        </div>
-    </div>
-
-    <div class="row"></div>
-        <div class="col-sm-12 col-md-4">
-                    <h4>Mars Hemispheres</h4>
-                    <p><img src="{{mars.hemisphere_image_urls|safe}}" class="img-responsive"></p>
+            <div class="col-sm-12 col-md-4">
+                    <h4>Mars Facts</h4>
+                    <p>{{mars.facts|safe}}</p>
             </div>
         </div>
+
+        <div class="row"></div>
+            <div class="col-sm-12 col-md-4">
+                <h4>Mars Hemispheres</h4>
+            </div>
+        </div>
+    
     </div>
 
-          <!-- <div class="row">
-                  <div class="col-sm-12 col-md-6">
-                          <div class="card text-white bg-primary mb-3">
-                                  <div class="card-header">City Latitude vs. Cloudiness</div>
-                                  <div class="card-body">
-                                    
-                                    <img style="height: 100%; width: 100%; display: block;" src="images/lat_v_cloud.png" alt="Scatter Plot: Lattitude v. Cloudiness">
-                                    <p class="card-text">According the <a href="https://earthobservatory.nasa.gov/IOTD/view.php?id=85843">NASA</a>, there are three broad bands where...</p>
-                                    <button type="button" class="btn btn-secondary">
-                                        <a href="cloudiness.html" style="color:inherit">Read more</a></button>
-                                  </div>
-                                </div>
-                  </div>
-                  <div class="col-sm-12 col-md-6">
-                          <div class="card text-white bg-primary mb-3">
-                                  <div class="card-header">City Latitude vs. Humidity</div>
-                                  <div class="card-body">
-                                   
-                                    <img style="height: 100%; width: 100%; display: block;" src="images/lat_v_humid.png" alt="Scatter Plot: City Latitude vs. Humidity">
-                                    <p class="card-text">Higher humidity occurred in the middle lattitudes...</p>
-                                    <button type="button" class="btn btn-secondary">
-                                        <a href="humidity.html" style="color:inherit">Read more</a></button>
-                                  </div>
-                                </div>
-                  </div>
-                  <div class="col-sm-12 col-md-6">
-                          <div class="card text-white bg-primary mb-3">
-                                  <div class="card-header">City Latitude vs. Max Temp</div>
-                                  <div class="card-body">
-                                    
-                                    <img style="height: 100%; width: 100%; display: block;" src="images/lat_v_temp.png" alt="Scatter Plot: City Latitude vs. Max Temperature">
-                                    <p class="card-text">As expected, the weather becomes significantly warmer...</p>
-                                    <button type="button" class="btn btn-secondary">
-                                        <a href="temperature.html" style="color:inherit">Read more</a></button>
-                                  </div>
-                                </div>
-                  </div>
-                  <div class="col-sm-12 col-md-6">
-                          <div class="card text-white bg-primary mb-3">
-                                  <div class="card-header">City Latitude vs. Wind Speed</div>
-                                  <div class="card-body">
-                                    
-                                    <img style="height: 100%; width: 100%; display: block;" src="images/lat_v_wind.png" alt="Scatter Plot: City Latitude vs. Wind Speed">
-                                    <p class="card-text">Wind speed had an even distribution...</p>
-                                    <button type="button" class="btn btn-secondary">
-                                        <a href="wind.html" style="color:inherit">Read more</a></button>
-                                  </div>
-                                </div>
-                  </div>
-                </div> -->
+    <div class="container">
+        <div class="row" item-width="80%">
+
+            <div class="col-sm-6 col-md-3">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-header">{{mars.hemisphere_image_urls.1.title}}</div>
+                        <div class="card-body">
+                            <img style="height: 80%; width: 80%; display: block;" src="{{mars.hemisphere_image_urls.0.image}}" class="img-rounded">
+                        </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-header">{{mars.hemisphere_image_urls.2.title}}</div>
+                        <div class="card-body">
+                            <img style="height: 80%; width: 80%; display: block;" src="{{mars.hemisphere_image_urls.2.image}}" class="img-rounded">
+                        </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-header">{{mars.hemisphere_image_urls.3.title}}</div>
+                        <div class="card-body">
+                            <img style="height: 80%; width: 80%; display: block;" src="{{mars.hemisphere_image_urls.3.image}}" class="img-rounded">
+                        </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-header">{{mars.hemisphere_image_urls.0.title}}</div>
+                        <div class="card-body">
+                            <img style="height: 80%; width: 80%; display: block;" src="{{mars.hemisphere_image_urls.0.image}}" class="img-rounded">
+                        </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
 <br>
+
 <div class="col-sm-12">
     <div class="container">
       <div align="center">
         <hr class="my-4">
-            
             <br>
             <p>© 2018 Copyright Vacanti LLC</p>
       </div> 
     </div>
 </div>
+
 </body>
 </html>
